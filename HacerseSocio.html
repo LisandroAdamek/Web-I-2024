@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hacete Socio</title>
+        <link rel="stylesheet" href="HaceteSocioCSS.css">
+    </head>
+    <body>
+        <!--Header Menu-->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/escudos/BocaEscudo.png"></a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="PresentacionJugadores.html">Jugadores</a></li> 
+                </ul>
+            </nav>
+            <a href="HacerseSocio.html" class="miembro"><button>Hacete socio</button></a>
+        </header>
+        <div class="formulario" id="divFormulario">
+            <div class="titulo">
+                <h1>Convietete en socio llenando el formulario</h1>
+                <img src="img/escudos/BocaEscudo.png">
+            </div>
+            <form name="haceteSocio" class="formss" id="formulario">
+                <div class="forms" id="fn">
+                    <h3>Nombre</h3>
+                        <input type="text" id="fnombre" name="fnombre" onclick= "value = ''">
+                </div>
+                <div class="forms" id="fa">
+                    <h3>Apellido</h3>
+                    <input type="text" id="fapellido" name="fapellido" onclick= "value = ''">
+                </div>
+                <div class="forms" id="fm">
+                    <h3>Mail</h3>
+                    <input type="text" id="fmail" name="fmail">
+                </div>
+                <div class="contra" id="fc">
+                    <h3>Contraseña</h3>
+                    <input type="password" id="fpass" name="fpass" class="passworr" >
+                    <h6 id="herror"></h6>
+                    <h3>Vuelva a introducir su contraseña</h3>
+                    <input type="password" id="fpass2" name="fpass2" class="passworr">
+                </div>
+                <div class="envio">
+                    <input type="submit" value="Enviar" id="boton">
+                </div>
+            </form>
+            
+        </div>
+        <div class="msgExito" id="msgE" style="display: none;">
+            <h1>!FELICIDADES¡</h1>
+            <h2>Ahora eres Socio del Club Atletico Boca Juniors</h2>
+            <a class="ahref"  href="index.html">
+                <button class="volver">Volver a la pagina</button>
+            </a>
+        </div>
+        <script src="Formulario.js"></script>
+    </body>
+</html>

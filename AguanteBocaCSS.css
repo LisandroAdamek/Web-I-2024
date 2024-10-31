@@ -1,7 +1,273 @@
-body{
-    background-color: blue;
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
 }
-#principal{
-    background-color: gold;
+
+body{
+    background-color: rgb(214, 214, 214) ;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d0db5",endColorstr="#090979",GradientType=1);
+}
+
+/*Header*/
+
+.header{
+    background-color:#133c7c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    width: 100%;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    color: #f0b32a ;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 30px;
+    color: #f0b32a ;
+    text-decoration: none;
+}
+
+.header .miembro button{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(13,13,181);
+    padding: 9px 25px;
+    background-color: #f0b32a ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .miembro button:hover{
+    
+    transform: scale(1.1);
+}
+
+/*Fin Header*/
+
+/*Imagen de bienvenida*/
+.bienvenida{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background-image: url(img/309835277_575788821009774_4025439390825837681_n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bienvenida::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 247, 1, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bienvenida-txt{
+    max-width: 800px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bienvenida-txt h1{
+    font-size: 100px;
+    font-weight: 500;
+    color: #133c7c;
+}
+
+.bienvenida-txt h2{
+    font-size: 50px;
+    font-weight: 500;
+    color: #133c7c;
+}
+/*Fin Imagen de bienvenida*/
+
+/*partidos*/
+.partidos{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-color: #0c3daa;
+}
+
+.torneo{
+    height: 10%;
+    width: 100%;
+    background-color: #133c7c;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.torneo h2{
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+}
+
+.partidos-seccion{
+    top: 10px;
+    height: 85%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.partidos-item{
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+.partidos-item:hover{
+    transform: scale(1.1);
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.partidos-item h6{
+    font-size: 10px;
+}
+
+.partidos-item h2{
+    font-size: 25px;
+}
+
+.boke{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#inicio-item{
+    border-left: 0px;
+}
+
+#final-item{
+    border-right: 0px;
+}
+
+/*Footer*/
+.footer{
+    background-color:#133c7c;
+    color: rgb(184, 184, 184);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
+.footer-prin{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item, .footer-txt{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-txt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-txt h2{
+    font-size: 30px;
+}
+
+.footer-txt h3{
+    font-size: 20px;
+}
+
+.footer-txt h4{
+    font-size: 15px;
+}
+
+.footer-item{
+    height: 25%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.footer-item img{
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#marca-chica{
+    border-bottom: 0px;
 }

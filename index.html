@@ -1,17 +1,161 @@
 <!DOCTYPE html>
-<html lang="es">
 <html>
     <head>
         <title>Aguante Boca Net</title>
         <link rel="stylesheet" href="AguanteBocaCSS.css">
     </head>
+    
     <body>
-        <div id="barraInicio">
-            
+        <!--Header Menu-->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/escudos/BocaEscudo.png"></a>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="PresentacionJugadores.html">Jugadores</a></li> 
+                </ul>
+            </nav>
+            <a href="HacerseSocio.html" class="miembro"><button>Hacete socio</button></a>
+        </header>
+        <!--Bienvenida-->
+        <div class="bienvenida">
+            <div class="bienvenida-txt">
+                <h1>Bienvenido</h1>
+                <h2>Esta es la pagina de Boca Juniors</h2>
+            </div>
         </div>
-        <div id="principal">
-            <h1 id="h1inicio">Bienvenido a la Pagina de Boca Jr.</h1>
-            <h3></h3>
+        <!--Informacion-->
+        <div class="partidos">
+            <div class="torneo">
+                <h2>Torneo Local</h2>
+            </div>
+            <div class="partidos-seccion">
+                <div class="partidos-item" id="inicio-item">
+                    <h6>Fecha 9</h6>
+                    <h2>06/03/2024</h2>
+                    <h4>19:15 HS</h4>
+                    <img src="img/escudos/ca-union-logo-0.png" height="100px" width="100px">
+                    <h2>1</h2>
+                    <h3>Union</h3>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>0</h2>
+                    <h3>Boca</h3>
+                </div>
+                <div class="partidos-item">
+                    <h6>Fecha 10</h6>
+                    <h2>10/03/2024</h2>
+                    <h4>21:30 HS</h4>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>4</h2>
+                    <h3>Boca</h3>
+                    <img src="img/escudos/racing-8211-racing-club-de-avellaneda.png" height="100px" width="100px">
+                    <h2>2</h2>
+                    <h3>Racing</h3>
+                </div>
+                <div class="partidos-item">
+                    <h6>Fecha 12</h6>
+                    <h2>30/03/2024</h2>
+                    <h4>17:00 HS</h4>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>2</h2>
+                    <h3>Boca</h3>
+                    <img src="img/escudos/Photoroom-20240415_122843.png" height="100px" width="100px">
+                    <h2>1</h2>
+                    <h3>San Lorenzo</h3>
+                </div>
+                <div class="partidos-item">
+                    <h6>Fecha 13</h6>
+                    <h2>06/04/2024</h2>
+                    <h4 id="nw">17:00 HS</h4>
+                    <img class="boke" src="img/escudos/Newells-old-boys-logo.png" height="80px" width="80px">
+                    <h2>1</h2>
+                    <h3>Newwll's</h3>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>3</h2>
+                    <h3>Boca</h3>
+                </div>
+                <div class="partidos-item">
+                    <h6>Fecha 11</h6>
+                    <h2>12/04/2024</h2>
+                    <h4>19:30 HS</h4>
+                    <img src="img/escudos/Escudo_de_Estudiantes_de_La_Plata.svg.png" height="100px" width="70px">
+                    <h2>1</h2>
+                    <h3>Estudiantes</h3>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>0</h2>
+                    <h3>Boca</h3>
+                </div>
+                <div class="partidos-item">
+                    <h6>Fecha 14</h6>
+                    <h2>16/04/2024</h2>
+                    <h4>19:30 HS</h4>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>1</h2>
+                    <h3>Boca</h3>
+                    <img src="img/escudos/Escudo_del_Club_Deportivo_Godoy_Cruz_Antonio_Tomba.svg.png" height="100px" width="100px">
+                    <h2>0</h2>
+                    <h3>Godoy Cruz</h3>
+                </div>
+                <div class="partidos-item">
+                    <h6>Cuartos de Final 1</h6>
+                    <h2>21/04/2024</h2>
+                    <h4>15:30 HS</h4>
+                    <img class="boke" src="img/escudos/Logo_River_Plate.png" height="80px" width="80px">
+                    <h2>2</h2>
+                    <h3>RiBer</h3>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>3</h2>
+                    <h3>Boca</h3>
+                </div>
+                <div class="partidos-item" id="final-item">
+                    <h6>Semifinal 1</h6>
+                    <h2>30/04/2024</h2>
+                    <h4>20:00 HS</h4>
+                    <img src="img/escudos/Escudo_de_Estudiantes_de_La_Plata.svg.png" height="100px" width="70px">
+                    <h2>1</h2>
+                    <h3>Estudiantes</h3>
+                    <img class="boke" src="img/escudos/BocaEscudo.png" height="80px" width="80px">
+                    <h2>1</h2>
+                    <h3>Boca</h3>
+                </div>
+            </div>
         </div>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-prin">
+                <div class="footer-txt">
+                    <h2>Golbal Sponsors</h2>
+                </div>
+                <div class="footer-item">
+                    <img src="img/marcas/adidas.png" height="80px" width="80px">
+                    <img src="img/marcas/quilmes.png" height="80px" width="80px">
+                </div>
+                <div class="footer-txt">
+                    <h2>Main Sponsor</h2>
+                </div>
+                <div class="footer-item">
+                    <img src="img/marcas/lg.png" height="80px" width="80px">
+                    <img src="img/marcas/nike.png" height="80px" width="100px">
+                </div>
+                <div class="footer-txt">
+                    <h3>Premium Sponsors</h3>
+                </div>
+                <div class="footer-item">
+                    <img src="img/marcas/pepsi.png" height="80px" width="80px">
+                    <img src="img/marcas/puma.png" height="80px" width="80px">
+                    <img src="img/marcas/tesla.png" height="80px" width="80px">
+                </div>
+                <div class="footer-txt">
+                    <h4>Sponsors Digitales</h4>
+                    <h4>Cobertura Medica Oficial</h4>
+                </div>
+                <div class="footer-item" id="marca-chica">
+                    <img src="img/marcas/apple.png" height="50px" width="50px">
+                    <img src="img/marcas/salud.png" height="50px" width="50px">
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

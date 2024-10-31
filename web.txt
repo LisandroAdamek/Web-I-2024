@@ -1,2 +1,18 @@
 Pagina de boca, pagina principal: Que cuente una introduccion de boca. que las paginas que sean para hacer miembro(Con imagenes de la bombonera),
 otra que muestre la plantilla del equipo que alli usando el carrusel se pueda ver jugador por jugador
+
+<div class="bienvenida">
+            <div class="bienvenida-txt">
+                <h1>Bienvenido a la pagina de Boca Juniors</h1>
+            </div>
+        </div>
+
+.bienvenida{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/Cristiano\ Ronaldo.jpeg);
+    background-position: center;
+}
