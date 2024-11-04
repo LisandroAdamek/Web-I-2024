@@ -6,7 +6,7 @@ let mail = document.getElementById("fmail");
 let pass = document.getElementById("fpass");
 let pass2 = document.getElementById("fpass2");
 let enviar = document.getElementById("boton");
-const msg = document.getElementById("msgE");
+//const msg = document.getElementById("msgE");
 const fn = document.getElementById("fn");
 const fa = document.getElementById("fa");
 const fm = document.getElementById("fm");
@@ -64,7 +64,26 @@ function validacionDeDatos(){
 
     if(errores < 1){
         formulario.style.display = "none";
-        msg.style.display = "flex";
+//      msg.style.display = "flex";
+        const msg = document.createElement("div");
+        msg.className = ("msgExito");
+        msg.id = ("msge");
+        document.body.appendChild(msg);
+        const felicidades = document.createElement("h1");
+        felicidades.innerHTML = ("¡FELICIDADES!");
+        document.getElementById("msge").appendChild(felicidades);
+        const miembro = document.createElement("h2");
+        miembro.innerHTML = ("Ahora eres Socio del Club Atletico Boca Juniors");
+        document.getElementById("msge").appendChild(miembro);
+        const link = document.createElement("a");
+        link.href = ("index.html");
+        link.className = ("ahref");
+        link.id = ("linked");
+        document.getElementById("msge").appendChild(link);
+        const boton = document.createElement("button");
+        boton.className = ("volver");
+        document.getElementById("linked").appendChild(boton);
+        boton.textContent= ("Volver a la pagina");
         return true;
     } else {
         return false; 
