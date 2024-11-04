@@ -70,7 +70,7 @@ function validacionDeDatos(){
         msg.id = ("msge");
         document.body.appendChild(msg);
         const felicidades = document.createElement("h1");
-        felicidades.innerHTML = ("¡FELICIDADES!");
+        felicidades.innerHTML = (`¡FELICIDADES ${txtNombre}!`);
         document.getElementById("msge").appendChild(felicidades);
         const miembro = document.createElement("h2");
         miembro.innerHTML = ("Ahora eres Socio del Club Atletico Boca Juniors");
